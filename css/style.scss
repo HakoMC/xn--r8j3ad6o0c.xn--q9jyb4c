@@ -5,16 +5,16 @@
     margin: 0; 
     padding: 0; 
     box-sizing: border-box;
-    --textcolor: #fff;
-    --bgcolor: #000000;
-    --highlight: #d21e1e;
+    $textcolor: #fff;
+    $bgcolor: #000000;
+    $highlight: #d21e1e;
 }
 body {
     font-size: 20px;
     font-family: 'Noto Sans JP', sans-serif;
     line-height: 1.4;
-    color: var(--textcolor);
-    background: var(--bgcolor);
+    color: $textcolor;
+    background: $bgcolor;
     width: 80%;
     height: 100svh;
     margin: 0 10%;
@@ -78,19 +78,19 @@ nav {
 .about {
     height: 80svh;
 	animation: fadein 1s forwards;
-}
-.about-icon {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-.about img {
-    height: 200px;
-    border-radius: 50%;
-	box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 30px;
-}
-.about p {
-    margin-top: 10px;
+    img {
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 30px;
+    }
+    p {
+        margin-top: 10px;
+    }
+    &-icon {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
 }
 
 footer {
